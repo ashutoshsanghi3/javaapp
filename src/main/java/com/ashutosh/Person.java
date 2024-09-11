@@ -3,10 +3,11 @@ package com.ashutosh;
 import lombok.*;
 
 
-@AllArgsConstructor(access = lombok.AccessLevel.PRIVATE)
+//@AllArgsConstructor(access = lombok.AccessLevel.PRIVATE)
+//@Getter
+//@EqualsAndHashCode(of = {"name","age"})
+@Data //The above methods can also be done by the data class
 @Builder
-@Getter
-@EqualsAndHashCode(of = {"name","age"})
 //@ToString
 public class Person {
     private String name;
